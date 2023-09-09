@@ -31,6 +31,10 @@ app.get('/api', (req, res) => {
     // Get GitHub URL of the file being run
   const githubFileUrl = `https://github.com/Justina177/HNG-task-one/blob/main/index.js`;
 
+  // Get GitHub URL of the full source code
+  const githubRepoUrl = 'https://github.com/Justina177/HNG-task-one.git';
+
+
 
     
 
