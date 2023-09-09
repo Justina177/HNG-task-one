@@ -28,7 +28,11 @@ app.get('/api', (req, res) => {
     const utcTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}Z`;
 
 
+    // Get GitHub URL of the file being run
+  const githubFileUrl = `https://github.com/Justina177/HNG-task-one/blob/main/index.js`;
 
+
+    
 
 })
 
