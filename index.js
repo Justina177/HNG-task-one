@@ -9,6 +9,11 @@ app.get('/api', (req, res) => {
     
         return res.status(400).json({ error: 'slack_name and track are required parameters' });
     }
+
+      // Get current day of the week
+  const currentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+
+  
 })
 
 
