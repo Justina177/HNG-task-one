@@ -29,17 +29,24 @@ app.get('/api', (req, res) => {
 
 
     // Get GitHub URL of the file being run
-  const githubFileUrl = `https://github.com/Justina177/HNG-task-one/blob/main/index.js`;
+    const githubFileUrl = `https://github.com/Justina177/HNG-task-one/blob/main/index.js`;
 
-  // Get GitHub URL of the full source code
-  const githubRepoUrl = 'https://github.com/Justina177/HNG-task-one.git';
+    // Get GitHub URL of the full source code
+    const githubRepoUrl = 'https://github.com/Justina177/HNG-task-one.git';
 
+    const response = {
+        slack_name,
+        current_day: currentDay,
+        utc_time: utcTime,
+        track,
+        github_file_url: githubFileUrl,
+        github_repo_url: githubRepoUrl,
+        status_code: 200
+    };
 
+    res.json(response);
 
-    
-
-})
-
+});
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
